@@ -1,0 +1,1800 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/*   ----------------------------------------------------- HELE PAGINA */
+
+@font-face {
+    font-family: "NS sans", sans-serif;
+    src: url(nssans__-webfont.ttf);
+}
+
+body {
+    background-color: rgb(230, 230, 233);
+    color: rgb(0, 48, 130);
+    margin: 0;
+    font-family: "NS Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2.37em;
+    line-height: 2.8125rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.37em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/*   ----------------------------------------------------- NAVIGATIE */
+
+nav {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+    width: 100%;
+    top: 0;
+    padding: 1em;
+    background-attachment: scroll;
+    position: fixed;
+    min-height: 2em;
+    z-index: 1;
+    display: flex;
+}
+
+.opties {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-height: 1.5em;
+}
+
+nav ul li {
+    padding: 0 1em;
+}
+
+.logo {
+    align-self: flex-start;
+    list-style-type: none;
+}
+
+li a img {
+    width: 2em;
+}
+
+.logo img {
+    width: 3em;
+}
+
+/* search */
+
+.zoeken input[type=text] {
+    width: 1em;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1em;
+    background-image: url("iconen/searchdark.png");
+    background-size: 2.1em;
+    background-color: white;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 1em 1em 0em 2em;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.zoeken input[type=text]:focus {
+    width: 15em;
+    margin-left: -12em;
+}
+
+/*   ----------------------------------------------------- INTRO */
+
+.intro {
+    padding: 2.4em;
+    margin: 5em 2em 2em;
+    line-height: 1.5em;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+.intro h1 {
+    padding-bottom: 0.6em;
+}
+
+
+
+/*   ----------------------------------------------------- FILTER */
+
+aside {
+    display: flex;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+}
+
+/* FILTER http://www.randomsnippets.com/2016/03/08/how-to-hide-or-show-content-based-on-css/ */
+
+.ex1 label:first-child {
+    margin: 0 0 0 7em;
+    background-color: #ffc917;
+    padding: 0.9em 2.0em;
+    font-size: 1.1em;
+    box-shadow: 0 -0.15em 0 #cfa317 inset;
+    cursor: pointer;
+}
+
+.ex1 label:first-child:hover {
+    background-color: #cfa317;
+}
+
+#item-1 {
+    display: none;
+}
+
+.ex1 input[type="checkbox"]:not(:checked) + div {
+    opacity: 0;
+    max-height: 0;
+    border: none;
+}
+
+.ex1 li {
+    list-style-type: none;
+}
+
+.ex1 ul {
+    display: flex;
+    flex-direction: column;
+    position: padding: 0px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.filtercontent {
+    background-color: #ffc917;
+    margin-left: 6.2em;
+    width: 10em;
+}
+
+/* SLIDER */
+
+.slidecontainer {
+    width: 90%;
+}
+
+.slidecontainer > p {
+    margin: 0 0 0.5em 1em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1.5em;
+    background: #fff;
+    opacity: 0.9;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 0.8em;
+    margin-bottom: 1em;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2em;
+    height: 2.2em;
+    background: #0079d3;
+    cursor: pointer;
+}
+
+/*   ----------------------------------------------------- SORTEER */
+
+.sort label:first-child {
+    margin: 0 0.5em;
+    background-color: #ffc917;
+    padding: 0.9em 2.0em;
+    font-size: 1.1em;
+    box-shadow: 0 -0.15em 0 #cfa317 inset;
+    cursor: pointer;
+}
+
+.sort label:first-child:hover {
+    background-color: #cfa317;
+}
+
+#item-2 {
+    display: none;
+}
+
+.sort input[type="checkbox"]:not(:checked) + div {
+    opacity: 0;
+    max-height: 0;
+    border: none;
+}
+
+.sort li {
+    list-style-type: none;
+}
+
+.sort ul {
+    display: flex;
+    flex-direction: column;
+    position: padding: 0px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.sorteer {
+    background-color: #ffc917;
+    margin-left: 2.2em;
+    width: 10em;
+}
+
+
+
+/*   ----------------------------------------------------- VERHALEN   */
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article {
+    max-height: 10em;
+    background-color: rgb(224, 224, 224);
+    padding-bottom: 2em;
+    margin: 1.2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+}
+
+article:first-of-type {
+    border-left: .3125rem solid #0079d3;
+}
+
+article > img {
+    width: 100%;
+    max-height: 14em;
+    filter: brightness(85%);
+}
+
+article > img:nth-child(2) {
+    display: none;
+}
+
+article header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    margin-top: 5.5em;
+    color: #fff;
+}
+
+article h3 a {
+    text-decoration: none;
+    margin-left: 1.1em;
+}
+
+article h3 a:hover {
+    margin-left: 1.3em;
+}
+
+article header h3 {
+    font-weight: 600;
+}
+
+article header a {
+    color: #fff;
+    text-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, .15);
+}
+
+article header span {
+    font-size: 0.8em;
+    width: 9em;
+}
+
+article header span:nth-child(2) {
+    margin-top: -1em;
+}
+
+
+.icon {
+    margin: -6em 0.5em 0 0;
+    padding: 0.5em 0.6em 0.5em 0.2em;
+    background-color: #ffc917;
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+    max-height: 3em;
+    min-width: 2.9em;
+    max-width: 3em;
+    background-image: url(iconen/leeslijstdark.png);
+    background-position: center;
+    background-size: 3em;
+    background-repeat: no-repeat;
+}
+
+
+article header span:nth-child(3):hover {
+    background-color: #cfa317;
+}
+
+article header span img {
+    width: 2.5em;
+}
+
+article.active {
+    max-height: 50em;
+}
+
+
+/* DE CARD */
+
+article {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+}
+
+
+/* HET HANDVAT */
+
+article .card-handvat {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 1em;
+    text-align: center;
+    border-radius: 0;
+    color: #ffc917;
+    width: 5em;
+    height: 2em;
+}
+
+article .card-handvat:hover {
+    color: #ffc917;
+}
+
+article .card-handvat::after {
+    content: "\25BC";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
+    color: #ffc917;
+}
+
+article.active .card-handvat::after {
+    content: "\25B2";
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*  INFORMATIE VAN VERHAAL  */
+
+.middle {
+    margin-top: 2.5em;
+    padding: 0 1.5625rem;
+    line-height: 1.5625rem;
+}
+
+.middleoptions {
+    display: flex;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+/* https://css-tricks.com/star-ratings/ */
+
+.rating span {
+    margin-left: 0.6em;
+}
+
+.rating {
+    width: 100%;
+    margin-left: -35%;
+    margin-top: -2em;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+.rating > p {
+    padding-right: 2em;
+    font-size: 0.7em;
+}
+
+h4 a {
+    text-decoration: none;
+    color: rgb(0, 48, 130);
+}
+
+.middleoptions {
+    margin-top: 1em;
+}
+
+.middleoptionsreview {
+    margin-top: 1em;
+}
+
+.middleoptions h4:first-child {
+    border-bottom: 0.1em solid #0079d3;
+}
+
+.middleoptions h4:nth-child(2) {
+    margin-left: 2em;
+}
+
+article footer {
+    width: 11em;
+    height: 1em;
+    margin: 2em 0 0 1.5em;
+    padding: 0em 0 0.5em 1.5em;
+    border: none;
+    border-radius: 0;
+}
+
+article footer a {
+    text-decoration: none;
+    color: #0079d3;
+    background-image: url("iconen/arrowlight.png");
+    background-repeat: no-repeat;
+    background-position: -10% center;
+    background-size: 2.3em;
+    cursor: pointer;
+    padding: 0.1em 0 0 2em;
+}
+
+
+article footer a:hover {
+    margin-left: 0.5em;
+}
+
+article footer div {
+    color: #0079d3;
+    background-image: url("iconen/arrowlight.png");
+    background-repeat: no-repeat;
+    background-position: -10% center;
+    background-size: 2.3em;
+    cursor: pointer;
+    padding: 0.1em 0 0 2em;
+    margin-left: 0.2em;
+}
+
+article footer div:hover {
+    margin-left: 0.5em;
+}
+
+
+/*   ----------------------------------------------------- REVIEWS  */
+
+/* INDEX REVIEW FAKE PAGE */
+
+.middleoptionsreview {
+    display: flex;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.middleoptionsreview h4:nth-child(2) {
+    border-bottom: 0.1em solid #0079d3;
+    width: 4em;
+    margin-left: 2em;
+}
+
+.middleoptionsreview h4:first-child {
+    border: none;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews button {
+    height: 3em;
+    width: 14em;
+    margin: 0 0 1em 0;
+    padding: 0 1em 0 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    text-shadow: none;
+    color: #fff;
+    border-top: none;
+    border-radius: 0;
+    box-shadow: 0 -0.13rem 0 #005ca0 inset;
+    background-color: #0079d3;
+    background-image: url("iconen/arrowwhite.png");
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 3em;
+    cursor: pointer;
+}
+
+.reviews button:hover {
+    background-color: #005ca0;
+}
+
+.reviews h5 {
+    font-weight: 600;
+    margin: 0.8em 0 0.8em 0;
+}
+
+.reviews p {
+    margin-left: 1em;
+}
+
+.review p:nth-child(3) {
+    font-size: 0.7em;
+    margin-left: 1.6em;
+    color: #888888;
+}
+
+.reviews select {
+    width: 5em;
+    font-size: 1em;
+    margin-left: 12em;
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    padding: 0.3em 0 0.3em 0.3em;
+}
+
+
+/*   bron : https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6  */
+
+/*   ----------------------------------------------------- MEDIA QUERRIES WIDTH 480 */
+
+@media screen and (min-width: 30em) {
+    /*   ------------------- HELE PAGINA */
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 5em 1em 0 2em;
+        height: 100%;
+    }
+    /*   ------------------- HEADER & ASIDE */
+    .intro,
+    aside {
+        min-width: 17em;
+        max-width: 18em;
+        text-align: left;
+    }
+    aside {
+        flex-direction: column;
+        margin-top: 3em;
+        margin-left: 4em;
+    }
+    .horizontalblock header {
+        margin-top: 3em;
+        margin-left: 2em;
+    }
+
+    .ex1 {
+        margin-left: -4em;
+    }
+    .sort {
+        margin-top: 3em;
+        margin-left: 3em;
+    }
+    /*   ------------------- VERHALEN CARD STYLING */
+    article {
+        flex: 0 0 auto;
+    }
+
+    article {
+        min-height: 38em;
+        max-width: 18em;
+        padding-bottom: 2em;
+        margin: 1.2em;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+    }
+
+
+    article header span:nth-child(3) {
+        margin-top: -155%;
+        margin-right: 0;
+    }
+
+    article header span:nth-child(2) {
+        margin-left: 2.5em;
+        margin-top: 0.1em;
+    }
+
+    article > img:first-of-type {
+        display: none;
+    }
+
+    article > img:nth-child(2) {
+        display: block;
+        min-height: 110%;
+        width: 18em;
+    }
+
+    article header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 16em;
+        position: absolute;
+        margin-top: 145%;
+    }
+
+    article.active {
+        min-height: 38em;
+        max-width: 35em;
+    }
+
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -34em 0 2em 18em;
+    }
+
+    .horizontalinforeviews {
+        margin: -34em 0 2em 17.2em;
+    }
+
+    .reviews select {
+        margin-left: 10em;
+    }
+
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT -1  720px */
+
+@media screen and (min-height: 42em) {
+    aside {
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 3em;
+    }
+    .sorteer {
+        margin-top: 0em;
+        margin-left: -0.5em;
+    }
+    .horizontalblock header {
+        margin-top: 3em;
+        margin-left: 1em;
+    }
+    .ex1 ul {
+        margin-top: 1.1em;
+    }
+    .ex1 {
+        margin-left: -4em;
+    }
+    .sort {
+        margin-top: 0;
+        margin-left: -1em;
+    }
+
+    /*   ------------------- VERHALEN CARD STYLING */
+    article {
+        min-height: 35em;
+        max-width: 18em;
+    }
+
+    article header span:nth-child(3) {
+        margin-top: -150%;
+        margin-right: 0;
+    }
+
+    article header {
+        margin-top: 145%;
+    }
+
+    article.active header {
+        margin-top: 75%;
+    }
+
+    article.active {
+        min-height: 35em;
+        max-width: 35em;
+    }
+
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -35em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -35em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 1  840px */
+
+@media screen and (min-height: 51em) {
+    .horizontalblock header {
+        margin-top: 4em;
+        margin-left: 2em;
+    }
+
+    /*   ------------------- VERHALEN CARD STYLING */
+    article {
+        min-height: 45em;
+        max-width: 18em;
+    }
+
+    article header span:nth-child(3) {
+        margin-top: -185%;
+        margin-right: 0;
+    }
+
+    article header {
+        margin-top: 175%;
+    }
+
+    article.active header {
+        margin-top: 90%;
+    }
+
+    article.active {
+        min-height: 45em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -40em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -40em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 2  900px  */
+
+@media screen and (min-height: 56em) {
+    aside {
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 4em;
+    }
+    .sorteer {
+        margin-top: 0;
+        margin-left: -0.5em;
+    }
+    .horizontalblock {
+        margin-top: 2em;
+    }
+    .horizontalblock header {
+        margin-top: 3em;
+        margin-left: 2em;
+    }
+    .ex1 ul {
+        margin-top: 1.1em;
+    }
+
+    /*   ------------------- VERHALEN CARD STYLING */
+    article {
+        min-height: 47em;
+        max-width: 18em;
+    }
+
+    article header span:nth-child(3) {
+        margin-top: -195%;
+        margin-right: 0;
+    }
+
+    article header {
+        margin-top: 185%;
+    }
+
+    article.active header {
+        margin-top: 96%;
+    }
+
+    article.active {
+        min-height: 47em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -40em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -40em 0 2em 17.2em;
+    }
+}
+
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 3  930px  */
+
+@media screen and (min-height: 58em) {
+    aside {
+        margin-top: 6em;
+    }
+    article {
+        min-height: 49em;
+        max-width: 18em;
+    }
+
+    .icon {
+        margin-top: -205%;
+        margin-right: 0;
+    }
+
+    article header {
+        margin-top: 195%;
+    }
+
+    article.active header {
+        margin-top: 100%;
+    }
+
+    article.active {
+        min-height: 49em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -40em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -40em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 4 960 */
+
+@media screen and (min-height: 60em) {
+    aside {
+        margin-top: 6em;
+    }
+    .horizontalblock {
+        margin-top: 5em;
+    }
+    .horizontalblock header {
+        margin-top: 3em;
+        margin-left: 2em;
+    }
+
+    article {
+        min-height: 52em;
+        max-width: 18em;
+    }
+
+    .icon {
+        margin-top: -215%;
+        margin-right: 0;
+    }
+    article header {
+        margin-top: 210%;
+    }
+
+    article.active header {
+        margin-top: 110%;
+    }
+
+    article.active {
+        min-height: 52em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -45em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -45em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 5 990 */
+
+@media screen and (min-height: 62em) {
+    article {
+        min-height: 53em;
+        max-width: 18em;
+    }
+
+    article.active {
+        min-height: 53em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -46em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -46em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 6 1050 */
+
+@media screen and (min-height: 65.5em) {
+    aside {
+        margin-top: 8em;
+    }
+    .horizontalblock header {
+        margin-top: 5em;
+    }
+    .icon {
+        margin-top: -250%;
+    }
+    article header {
+        margin-top: 235%;
+    }
+    article {
+        min-height: 57em;
+        max-width: 18em;
+    }
+
+    article.active header {
+        margin-top: 120%;
+    }
+
+    article.active {
+        min-height: 57em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -50em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -50em 0 2em 17.2em;
+    }
+}
+
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 7 1100 */
+
+@media screen and (min-height: 69em) {
+    aside {
+        margin-top: 8em;
+    }
+    .horizontalblock header {
+        margin-top: 5em;
+    }
+    .icon {
+        margin-top: -250%;
+    }
+    article header {
+        margin-top: 235%;
+    }
+    article {
+        min-height: 60em;
+        max-width: 18em;
+    }
+    article.active header {
+        margin-top: 120%;
+    }
+
+    article.active {
+        min-height: 60em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -50em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -50em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 8 1220 */
+
+@media screen and (min-height: 75.5em) {
+    aside {
+        margin-top: 8em;
+    }
+    .horizontalblock header {
+        margin-top: 11em;
+    }
+    .icon {
+        margin-top: -280%;
+    }
+    article header {
+        margin-top: 265%;
+    }
+    article {
+        min-height: 67em;
+        max-width: 18em;
+    }
+    article.active header {
+        margin-top: 135%;
+    }
+
+    article.active {
+        min-height: 67em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -50em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -50em 0 2em 17.2em;
+    }
+}
+
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 9 1310 */
+
+@media screen and (min-height: 83em) {
+    aside {
+        margin-top: 19em;
+    }
+    .icon {
+        margin-top: -290%;
+    }
+    article header {
+        margin-top: 280%;
+    }
+    article {
+        min-height: 74em;
+        max-width: 18em;
+    }
+    article.active header {
+        margin-top: 140%;
+    }
+    article.active {
+        min-height: 74em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -60em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -60em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- MEDIA QUERRIES HEIGHT 10 1410 */
+
+@media screen and (min-height: 82em) {
+    aside {
+        margin-top: 10em;
+    }
+    .icon {
+        margin-top: -290%;
+    }
+    article header {
+        margin-top: 280%;
+    }
+    article {
+        min-height: 74em;
+        max-width: 18em;
+    }
+    article.active header {
+        margin-top: 150%;
+    }
+
+    article:.active {
+        min-height: 74em;
+        max-width: 35em;
+    }
+    /*   ------------------- VERHALEN INFO*/
+    .horizontalinfo {
+        margin: -60em 0 2em 18em;
+    }
+    .horizontalinforeviews {
+        margin: -60em 0 2em 17.2em;
+    }
+}
+
+/*   ----------------------------------------------------- ACCOUNT PAGE  */
+
+.container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+    width: calc(100% - 2em);
+    margin: 5em 1em 5em 1em;
+    padding: 0 1em 0 1em;
+    display: block;
+}
+
+.container h1 {
+    font-size: 2em;
+    line-height: 1.3em;
+    margin: 0.5em 0;
+    padding-top: 1em;
+    text-rendering: optimizelegibility;
+    display: block;
+}
+
+.formcontainer {
+    width: 100%;
+    display: block;
+}
+
+.login {
+    width: 100%;
+    background-color: #ffc917;
+    padding: 0.5em 1em 1em 1em;
+}
+
+.login legend {
+    font-size: 1em;
+    padding: 0.5em 0 1.5em;
+}
+
+.register {
+    width: 100%;
+    padding: 0.5em 1em 1em 1em;
+}
+
+.register legend {
+    font-size: 1em;
+    padding: 2em 0 1.5em;
+}
+
+.label {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding-top: 0.2em;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.register input[type="text"],
+.register input[type="date"],
+.register input[type="password"],
+.register input[type="email"] {
+    font-size: 0.9em;
+    padding: 1em;
+    height: 2em;
+    border-color: #ffc917;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #fff;
+    border: 0.05em solid #b5b5bc;
+    width: 100%;
+    font-family: "NS Sans", sans-serif;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+    border-color: #ffc917;
+}
+
+.register input[type="text"],
+.register input[type="date"],
+.register input[type="password"],
+.register input[type="email"] {
+    border-color: lightgrey;
+}
+
+input {
+    cursor: text;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+}
+
+.button {
+    height: 3em;
+    min-width: 9em;
+    margin: 1em 0 0 0;
+    padding: .6em 2.9em 0.6em 1em;
+    text-align: center;
+    font-size: 0.9em;
+    text-shadow: none;
+    color: #fff;
+    border-top: none;
+    border-radius: 0;
+    box-shadow: 0 -0.13rem 0 #005ca0 inset;
+    background-color: #0079d3;
+    background-image: url("iconen/arrowwhite.png");
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 3em;
+    cursor: pointer;
+}
+
+.underlinebtn {
+    height: 3em;
+    min-width: 9em;
+    margin: 1em 1em 0 0.5em;
+    padding: 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #003082;
+    background-color: #ffc917;
+    border: none;
+    border-bottom: 0.15em solid rgba(7, 7, 33, 0.1);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #005ca0;
+}
+
+.underlinebtn:hover {
+    border-bottom: 0.15em solid #0079d3;
+}
+
+.button:focus {
+    background-color: #005ca0;
+}
+
+.underlinebtn:focus {
+    background-color: rgba(7, 7, 33, 0.1);
+}
+
+.button:active {
+    background-color: #003082;
+}
+
+.underlinebtn:active {
+    background-color: rgba(7, 7, 33);
+}
+
+.login input[type="password"]:valid,
+.login input[type="email"]:valid {
+    border-bottom: solid 0.3em green;
+}
+
+.login input[type="password"]:focus,
+.login input[type="email"]:focus {
+    transform: scale(1.01, 1.01);
+}
+
+.register input[type="password"]:valid,
+.register input[type="email"]:valid,
+.register input[type="text"]:valid,
+.register input[type="date"]:valid {
+    border-bottom: solid 0.3em green;
+}
+
+.register input[type="password"]:focus,
+.register input[type="email"]:focus,
+.register input[type="text"]:focus,
+.register input[type="date"]:focus {
+    transform: scale(1.01, 1.01);
+}
+
+.register input[type="text"]:focus {
+    margin-left: 0em;
+}
+
+/*   ----------------------------------------------------- ACCOUNT PAGE MEDIAQUERRIES  */
+
+@media screen and (min-width: 44em) {
+    .container h1 {
+        margin: 1em;
+    }
+    .formcontainer {
+        margin-left: 1em;
+        padding-right: 1.5em;
+    }
+    .formcontainer legend {
+        font-size: 1.2em;
+    }
+    .formgroup {
+        display: flex;
+        margin-bottom: 1em;
+
+    }
+    .login input[type="email"],
+    .login input[type="password"] {
+        margin-left: -20em;
+        margin-right: 3em;
+        font-size: 0.8em;
+    }
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -20em;
+        margin-right: 3em;
+        font-size: 0.8em;
+    }
+    .button {
+        margin-left: 25%;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -20em;
+    }
+}
+
+@media screen and (min-width: 46em) {
+    .login input[type="email"],
+    .login input[type="password"],
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -22em;
+    }
+    .button {
+        margin-left: 24%;
+    }
+}
+
+@media screen and (min-width: 50em) {
+
+    .login input[type="email"],
+    .login input[type="password"],
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -25em;
+    }
+    .button {
+        margin-left: 12em;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -25em;
+    }
+
+}
+
+@media screen and (min-width: 51.5em) {
+    .button {
+        margin-left: 12.6em;
+    }
+}
+
+@media screen and (min-width: 53em) {
+    .login input[type="email"],
+    .login input[type="password"],
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -29em;
+    }
+    .button {
+        margin-left: 11.4em;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -29em;
+    }
+}
+
+@media screen and (min-width: 55em) {
+    .button {
+        margin-left: 12.6em;
+    }
+}
+
+@media screen and (min-width: 57em) {
+    .button {
+        margin-left: 32%;
+    }
+    .login input[type="email"],
+    .login input[type="password"],
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -35em;
+    }
+    .button {
+        margin-left: 20%;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -35em;
+    }
+}
+
+@media screen and (min-width: 59.5em) {
+    .button {
+        margin-left: 21%;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .button {
+        margin-left: 10.9em;
+    }
+    .login input[type="email"],
+    .login input[type="password"],
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -40em;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -40em;
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .button {
+        margin-left: 11em;
+    }
+    .login input[type="email"],
+    .login input[type="password"],
+    .register input[type="text"],
+    .register input[type="date"],
+    .register input[type="password"],
+    .register input[type="email"] {
+        margin-left: -42em;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -42em;
+    }
+}
+
+@media screen and (min-width: 65em) {
+
+    .formcontainer {
+        display: flex;
+        margin-top: 4em;
+    }
+    .login {
+        height: 25em;
+        padding: 1em 1.5em;
+    }
+    .register {
+        margin-top: -1.5em;
+        padding-left: 2em;
+        padding-bottom: 2em;
+    }
+    .formcontainer legend {
+        font-size: 1.5em;
+    }
+
+
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -12em;
+    }
+    .register input[type=text],
+    .register input[type=date],
+    .register input[type=password],
+    .register input[type=email],
+    .register input[type=email] {
+        margin-left: -7em;
+        margin-right: 1em;
+    }
+    .button {
+        margin-left: 28%;
+    }
+    .register .button {
+        margin-left: 39%;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -8em;
+    }
+}
+
+@media screen and (min-width: 68em) {
+    .button,
+    underlinebtn {
+        margin-left: 8.5em;
+    }
+    .register .button {
+        margin-left: 12.8em;
+    }
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -14em;
+    }
+}
+
+@media screen and (min-width: 69em) {
+    .button,
+    underlinebtn {
+        margin-left: 7.5em;
+    }
+    .register .button {
+        margin-left: 12.5em;
+    }
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -16em;
+    }
+}
+
+
+@media screen and (min-width: 70em) {
+
+    .register .button {
+        margin-left: 12.7em;
+    }
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -16em;
+    }
+    .register input[type=text],
+    .register input[type=date],
+    .register input[type=password],
+    .register input[type=email],
+    .register input[type=email] {
+        margin-left: -10em;
+    }
+    .register input[type="text"]:focus {
+        margin-left: -11em;
+    }
+}
+
+@media screen and (min-width: 71em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -17em;
+    }
+}
+
+@media screen and (min-width: 72em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -18em;
+    }
+}
+
+@media screen and (min-width: 73em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -18.8em;
+    }
+}
+
+@media screen and (min-width: 74em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -19.3em;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -20.6em;
+    }
+}
+
+@media screen and (min-width: 76em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -21.2em;
+    }
+}
+
+@media screen and (min-width: 77em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -21em;
+    }
+}
+
+@media screen and (min-width: 78em) {
+    .login input[type=email],
+    .login input[type=password] {
+        margin-left: -22em;
+    }
+    .register .button {
+        margin-left: 13.7em;
+    }
+}
+
+/*   ----------------------------------------------------- LEESLIJST  */
+
+.leeslijst .button {
+    width: 12em;
+}
+
+.leeslijst {
+    display: flex;
+    flex-flow: row;
+    margin-left: 15%;
+    flex-wrap: wrap;
+}
+
+.leeslijst .button:nth-child(2),
+.leeslijst .button:nth-child(3) {
+    width: 4em;
+}
+
+.leeslijst > .button:first-child {
+    background-color: #ffc917;
+    border-bottom: none;
+    color: rgb(0, 48, 130);
+    box-shadow: 0 -0.13rem 0 #cfa317 inset;
+    width: 55%;
+    margin-right: 1em;
+
+}
+
+.leeslijst :first-child:hover {
+    background-color: #cfa317;
+}
+
+
+.intro-leeslijst {
+    padding: 2em 2.4em 1em 2.4em;
+    margin: 5em 2em 0 2em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+
+/*   ----------------------------------------------------- LEESLIJST MEDIAQUERRIES  */
+
+@media screen and (min-width: 30em) {
+    .leeslijst {
+        margin-left: -1.7em;
+        margin-right: 0;
+    }
+    .leeslijst .button {
+        min-width: 10.5em;
+    }
+    .leeslijst .button:first-child {
+        margin-left: 0.7em;
+    }
+}
+
+@media screen and (min-width: 37em) {
+    .leeslijst .button:nth-child(2),
+    .leeslijst .button:nth-child(3) {
+        margin-left: -0.3em;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .leeslijst .button {
+        margin-bottom: 1em;
+    }
+}
+
+
+
+/*   ----------------------------------------------------- ANIMATIONS  */
+
+.checked {
+    background-image: url("/afbeeldingen/iconen/leeslijstadded.gif")
+}
+
+.downloading {
+    animation: load 4s forwards;
+
+}
+
+@keyframes load {
+
+    0% {
+        width: 2em;
+        border-bottom: 0.1em solid rgb(230, 230, 233);
+    }
+
+    50% {
+        width: 5em;
+        border-bottom: 0.1em solid rgb(230, 230, 233);
+    }
+
+    97% {
+        width: 7em;
+        border-bottom: 0.1em solid rgb(230, 230, 233);
+    }
+    100% {
+        width: 8em;
+        border-bottom: 0.1em solid #0079d3;
+    }
+}

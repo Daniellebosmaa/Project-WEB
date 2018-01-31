@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>NS Verhalen</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="logo">
+            <li><a href="index.html" title="NS">
+           <img src="afbeeldingen/logo.png" alt="NS logo">
+           </a></li>
+        </ul>
+        <ul class="opties">
+            <li><a href="account.html" title="Account"> <img src="afbeeldingen/iconen/accountdark.png" alt="account"></a></li>
+            <li><a href="leeslijst.html" title="Leeslijst"><img src="afbeeldingen/iconen/leeslijstdark.png" alt="leeslijst"></a></li>
+            <li>
+                <form class="zoeken">
+                    <label for="search"> 
+                    <input type="text" id="search" name="search" placeholder="Zoek op een trefwoord..">
+                    </label>
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="horizontalblock">
+            <header class="intro">
+                <h1>99 verhalen</h1>
+                <p> Welkom op de 99 verhalen website aangeboden door de NS. Hier vind je de 99 stijloefeningen geschreven door Max Molovich. Hij heeft 1 verhaal op 99 verschillende manieren uitgewerkt. Welk verhaal is jouw favoriet?</p>
+            </header>
+
+            <aside>
+
+                <div class="ex1">
+                    <label for="item-1">Filter</label>
+                    <input type="checkbox" name="one" id="item-1">
+                    <div class="filtercontent">
+                        <ul>
+                            <li><input type="checkbox" id="romance" name="romance" value="Romance">
+                                <label for="romance">Romantiek</label></li>
+                            <li><input type="checkbox" id="thriller" name="thriller" value="Thriller">
+                                <label for="thriller">Thriller</label></li>
+                            <li><input type="checkbox" id="humor" name="humor" value="Humor">
+                                <label for="humor">Humor</label></li>
+                            <li>
+                                <input type="checkbox" id="opinion" name="opinion" value="Opinion">
+                                <label for="opinion">Opinie</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="fiction" name="fiction" value="Fiction">
+                                <label for="fiction">Fictie</label>
+                            </li>
+                        </ul>
+                        <div class="slidecontainer">
+                            <p>Leestijd</p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sort">
+                    <label for="item-2">Sorteer</label>
+                    <input type="checkbox" name="two" id="item-2">
+                    <div class="sorteer">
+                        <ul>
+                            <li><input type="checkbox" id="aanbevolen" name="aanbevolen" value="Aanbevolen">
+                                <label for="aanbevolen">Aanbevolen</label></li>
+                            <li><input type="checkbox" id="verrasme" name="verrasme" value="Verras me">
+                                <label for="verrasme">Verras me</label></li>
+                            <li><input type="checkbox" id="titel" name="titel" value="Titel">
+                                <label for="titel">Titel</label></li>
+                            <li>
+                                <input type="checkbox" id="nummer" name="nummer" value="Nummer">
+                                <label for="nummer">Nummer</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="leestijd" name="leestijd" value="Leestijd">
+                                <label for="leestijd">Leestijd</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+
+
+        <article>
+            <img src="afbeeldingen/droomcard1.jpg" alt="Droom">
+            <img src="afbeeldingen/droomcard2.jpg" alt="Droom">
+            <header>
+                <h3> <a href="droom.html" title="Droom"> Droom
+           </a></h3>
+                <span><img src="afbeeldingen/iconen/time.png" alt="timeicon">10 min</span>
+                <span id="boekenlijst" class="icon"></span>
+            </header>
+
+            <div class="horizontalinfo">
+                <div class="middle">
+                    <div class="rating">
+                        <p> gemiddelde score</p>
+                        <span>☆</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="middleoptions">
+                        <h4> <a href="index.html" title="beschrijving"> Beschrijving </a></h4>
+                        <h4> <a href="indexreviews.html" title="reviews"> Reviews </a></h4>
+                    </div>
+
+                    <p> Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij. </p>
+                </div>
+                <footer>
+                    <a href="droom.html" title="Droom"> Lees verder
+                    </a>
+                    <div id="download"> Download
+                    </div>
+                </footer>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="afbeeldingen/beroemdcard1.jpg" alt="Beroemd">
+            <img src="afbeeldingen/beroemdcard2.jpg" alt="Beroemd">
+            <header>
+                <h3> <a href="beroemd.html" title="Beroemd"> Beroemd
+           </a></h3>
+                <span><img src="afbeeldingen/iconen/time.png" alt="timeicon">20 min</span>
+                <span id="boekenlijst2" class="icon"></span>
+            </header>
+            <div class="horizontalinfo">
+                <div class="middle">
+                    <div class="rating">
+                        <p> gemiddelde score</p>
+                        <span>☆</span><span>☆</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="middleoptions">
+                        <h4> <a href="index.html" title="beschrijving"> Beschrijving </a></h4>
+                        <h4> <a href="indexreviews.html" title="reviews"> Reviews </a></h4>
+                    </div>
+
+                    <p> Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er op zijn schouders rust. </p>
+                </div>
+                <footer> <a href="beroemd.html" title="Beroemd"> Lees verder
+           </a> <span id="download2"> Download
+                    </span>
+                </footer>
+            </div>
+        </article>
+
+
+
+        <article>
+            <img src="afbeeldingen/hongercard1.jpg" alt="Honger winter">
+            <img src="afbeeldingen/hongercard2.jpg" alt="Honger winter">
+            <header>
+                <h3> <a href="hongerwinter.html" title="Hongerwinter"> Hongerwinter
+           </a></h3>
+                <span><img src="afbeeldingen/iconen/time.png" alt="timeicon">15 min</span>
+                <span id="boekenlijst3" class="icon"></span>
+            </header>
+
+
+            <div class="horizontalinfo">
+                <div class="middle">
+                    <div class="rating">
+                        <p> gemiddelde score</p>
+                        <span>☆</span><span>☆</span><span>☆</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="middleoptions">
+                        <h4> <a href="index.html" title="beschrijving"> Beschrijving </a></h4>
+                        <h4> <a href="indexreviews.html" title="reviews"> Reviews </a></h4>
+                    </div>
+
+                    <p> Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. Het hout tussen de rails is al lang weggenomen. </p>
+                </div>
+                <footer> <a href="hongerwinter.html" title="Hongerwinter"> Lees verder
+           </a><span id="download3"> Download
+                    </span>
+                </footer>
+            </div>
+        </article>
+    </main>
+
+    <script src="style/cards.js"></script>
+
+</body>
+
+</html>

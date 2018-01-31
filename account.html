@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Account</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="logo">
+            <li><a href="index.html" title="NS">
+           <img src="afbeeldingen/logo.png" alt="NS logo">
+           </a></li>
+        </ul>
+        <ul class="opties">
+            <li><a href="account.html" title="Account"> <img src="afbeeldingen/iconen/accountdark.png" alt="account"></a></li>
+            <li><a href="leeslijst.html" title="Leeslijst"><img src="afbeeldingen/iconen/leeslijstdark.png" alt="leeslijst"></a></li>
+            <li>
+                <form class="zoeken">
+                    <label for="search"> 
+                    <input type="text" id="search" name="search" placeholder="Zoek op een trefwoord..">
+                    </label>
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h1> Welkom bij uw NS verhalen account</h1>
+        <div class="formcontainer">
+            <div class="login">
+                <form>
+                    <fieldset>
+                        <legend>Inloggen</legend>
+                        <div class="formgroup">
+                            <label for="emaillogin" class="label">Email</label>
+                            <input required class="input" type="email" name="email" id="emaillogin" placeholder="Email"></div>
+                        <div class="formgroup"><label for="passwordlogin" class="label">Wachtwoord</label>
+                            <input required type="password" name="wachtwoord" id="passwordlogin" placeholder="Wachtwoord"></div>
+                        <input id="login" class="button" type="submit" name="aanmelden" value="Aanmelden"> <input class="underlinebtn" type="button" name="vergeten" value="Wachtwoord vergeten">
+                        <input class="button" type="button" name="facebooklogin" value="Log in met Facebook">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="register">
+                <form>
+                    <fieldset>
+                        <legend>Aanmelden</legend>
+                        <div class="formgroup">
+                            <label for="surname" class="label">Voornaam</label>
+                            <input required type="text" name="voornaam" id="surname" placeholder="Voornaam">
+                        </div>
+                        <div class="formgroup">
+                            <label for="lastname" class="label">Achternaam</label>
+                            <input required type="text" name="achternaam" id="lastname" placeholder="Achternaam">
+                        </div>
+                        <div class="formgroup"><label for="geboortedatum" class="label">Geboortedatum</label>
+                            <input required type="date" name="geboortedatum" id="geboortedatum"></div>
+                        <div class="formgroup"><label for="emailregister" class="label">Email</label>
+                            <input required type="email" name="email" id="emailregister" placeholder="E-mailadres"></div>
+                        <div class="formgroup"><label for="passwordregister" class="label">Wachtwoord</label>
+                            <input required type="password" name="wachtwoord" id="passwordregister" placeholder="Wachtwoord"></div>
+                        <div class="formgroup"><label for="passwordregisterrepeat" class="label">Herhaal wachtwoord</label>
+                            <input required type="password" name="wachtwoord" id="passwordregisterrepeat" placeholder="Herhaal wachtwoord"></div>
+                        <input class="button" type="submit" name="registreren" value="Registreren">
+                        <input class="button" type="button" name="facebookregister" value="Aanmelden met Facebook">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Nederlandse Spoorwegen 99 verhalen 2017
+    </footer>
+
+</body>
+
+</html>

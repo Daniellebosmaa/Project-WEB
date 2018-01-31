@@ -1,0 +1,468 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+@font-face {
+    font-family: "NS sans", sans-serif;
+    src: url(nssans__-webfont.ttf);
+}
+
+body {
+    background-color: rgb(230, 230, 233);
+    color: rgb(0, 48, 130);
+    margin: 0;
+    font-size: 16px;
+    font-family: "NS Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2.37em;
+    line-height: 2.8125rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.37em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+
+
+/*   ----------------------------------------------------- NAVIGATIE */
+
+nav {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+    width: 100%;
+    top: 0;
+    padding: 1em;
+    background-attachment: scroll;
+    position: fixed;
+    min-height: 2em;
+    z-index: 1;
+    display: flex;
+}
+
+.opties {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-height: 1.5em;
+}
+
+nav ul li {
+    padding: 0 1em;
+}
+
+.logo {
+    align-self: flex-start;
+    list-style-type: none;
+}
+
+li a img {
+    width: 2em;
+}
+
+.logo img {
+    width: 3em;
+}
+
+/* search */
+
+.zoeken input[type=text] {
+    width: 1em;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1em;
+    background-image: url("iconen/searchdark.png");
+    background-size: 2.1em;
+    background-color: white;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 1em 1em 0em 2em;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 15em;
+    margin-left: -12em;
+    padding-bottom: 1em;
+}
+
+/* --------------------------------------------------------REVIEW FORM ONDER VERHAAL */
+
+footer {
+    background-color: #ffc917;
+    padding: 2em;
+}
+
+footer legend {
+    font-size: 1.3em;
+    padding: 0.5em 0 1.5em;
+}
+
+footer form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+footer label {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding-top: 0.2em;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+footer input[type="text"],
+textarea {
+    font-size: 0.9em;
+    padding: 1em;
+    height: 2em;
+    border-color: #ffc917;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #b5b5bc;
+    width: 90%;
+}
+
+fieldset textarea {
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    text-align: start;
+    height: 10em;
+}
+
+input {
+    cursor: text;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    border: #ffc917;
+}
+
+footer input[type="text"]:focus {
+    margin-left: 0;
+    width: 90%;
+    transform: scale(1.02, 1.02);
+}
+
+
+.button {
+    height: 3em;
+    min-width: 9em;
+    margin: 1em 0 0 0;
+    padding: .6em 2.9em 0.6em 1em;
+    text-align: center;
+    font-size: 0.9em;
+    text-shadow: none;
+    color: #fff;
+    border-top: none;
+    border-radius: 0;
+    box-shadow: 0 -0.13rem 0 #005ca0 inset;
+    background-color: #0079d3;
+    background-image: url(afbeeldingen/iconen/arrowwhite.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 3em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #005ca0;
+}
+
+.button:focus {
+    background-color: #005ca0;
+}
+
+.button:active {
+    background-color: #003082;
+}
+
+/* https://css-tricks.com/star-ratings/ */
+
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+}
+
+.rating span {
+    margin-left: 0.6em;
+}
+
+.rating {
+    width: 100%;
+    margin-left: -40%;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+@media screen and (min-width: 40em) {
+    textarea {
+        max-height: 5em;
+    }
+    .rating {
+        margin-top: 3em;
+    }
+}
+
+
+
+/*   ----------------------------------------------------- ALLE VERHALEN */
+
+div img {
+    width: 100%;
+    margin-top: 3em;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/*   ----------------------------------------------------- BEROEMD */
+
+.beroemd .mobile img:nth-child(2) {
+    margin-top: -4em;
+    margin-bottom: -4em;
+}
+
+.beroemd .tablet img:nth-child(2) {
+    margin-top: -11em;
+    margin-bottom: -6em;
+}
+
+.beroemd .desktop img:nth-child(2) {
+    margin-top: -17em;
+    margin-bottom: -15em
+}
+
+
+/*   ----------------------------------------------------- VERHALEN MEDIAQUERRIES  */
+
+@media screen and (min-width: 600px) {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
+
+
+/*   ----------------------------------------------------- PROGRESS BAR  */
+
+#progressbar {
+    height: 100%;
+    width: 1em;
+    position: fixed;
+    background-attachment: scroll;
+}
+
+.progress {
+    animation: progressmove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes progressmove {
+    0% {
+        background-color: rgb(0, 48, 130);
+        height: 0%;
+    }
+    100% {
+        background-color: rgb(0, 48, 130);
+        height: 80%;
+    }
+}
+
+#lezen {
+    margin: 6em 0 0 3em;
+    padding: 1em;
+    position: fixed;
+    background-attachment: scroll;
+    background-color: white;
+    width: 6.5em;
+    box-shadow: rgba(7, 7, 33, 0.15) 0 0.15em 0 0;
+}
+
+#lezen p {
+    display: inline-block;
+}
+
+#lezen p:nth-child(2) {
+    padding: 0.5em;
+    margin: 0.8em 0.8em 0.8em 1em;
+    width: 3em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -0.13rem 0 #005ca0 inset;
+    background-color: #0079d3;
+    cursor: pointer;
+}
+
+#lezen p:nth-child(3) {
+    padding: 0.5em;
+    margin: 0.2em 0 0 1em;
+    width: 3em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -0.13rem 0 #005ca0 inset;
+    background-color: #0079d3;
+    cursor: pointer;
+}
+
+
+#lezen p:nth-child(2):hover {
+    background-color: #005ca0;
+}
+
+#lezen p:nth-child(3):hover {
+    background-color: #005ca0;
+}
+
+.stopverderlezen {
+    animation: display 2s forwards;
+}
+
+
+@keyframes display {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
